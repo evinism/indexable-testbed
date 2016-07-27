@@ -4,9 +4,9 @@ import TaskList from './tasklist';
 const AppView = (props) => (
   <article>
     <h1>Application</h1>
-    <TaskList tasks={props.tasks} />
+    <TaskList {...props} />
     <hr />
-    <div className="bloop" onClick={() => props.actions.add(`This is task ${props.tasks.length + 1}`)}>
+    <div onClick={() => props.actions.add(prompt("What is your task?"))}>
       Click here to add a task
     </div>
   </article>

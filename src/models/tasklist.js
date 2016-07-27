@@ -7,7 +7,7 @@ export default class TaskList extends Indexable {
     return this.tasks[task] = task;
   };
 
-  remove = (index) => {
+  remove = (task) => {
     delete this.tasks[task];
   };
 
