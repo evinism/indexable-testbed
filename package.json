@@ -35,6 +35,7 @@
     "jquery": "^2.2.3",
     "ramda": "^0.21.0",
     "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react-dom": "^15.0.1",
+    "stupid-subscribe": "^0.2.1"
   }
 }

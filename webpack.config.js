@@ -1,5 +1,6 @@
 module.exports = {
   context: __dirname + "/src",
+  devtool: 'source-map',
   entry: [
     'babel-polyfill',
     './index',
