@@ -1,7 +1,7 @@
 {
-  "name": "react-dumb-boilerplate",
+  "name": "indexable-testbed",
   "version": "0.0.1",
-  "description": "a pretty dumb barebones frontend testbed boilerplate",
+  "description": "accompanying material for indexable article",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch",
@@ -9,17 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evinism/wapi.git"
+    "url": "git+https://github.com/evinism/indexable-testbed.git"
   },
   "keywords": [
-    "wapi"
+    "indexable"
   ],
   "author": "evin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/evinism/wapi/issues"
-  },
-  "homepage": "https://github.com/evinism/wapi#readme",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.7.7",
     "babel-loader": "^6.2.4",

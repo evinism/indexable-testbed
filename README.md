@@ -1,2 +1,3 @@
-# Boilerplate
-dicking around with boilerplatey-ness
+# indexable-testbed
+
+accompanying materials for indexable article
