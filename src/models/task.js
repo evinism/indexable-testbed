@@ -1,10 +1,9 @@
-import Indexable from '../util/indexable';
+import Listable from './../util/listable';
 import { action } from 'stupid-subscribe';
 
-export default class Task extends Indexable {
+export default class Task extends Listable {
   constructor(text, parentList){
-    super();
-    this.parentList = parentList;
+    super(parentList);
     this.text = text || "";
   };
 
@@ -12,10 +11,12 @@ export default class Task extends Indexable {
     this.text = newText;
   };
 
+  compare = (otherTask) => (this.text.localeCompare(otherTask.text));
+
   getProps = () => ({
     text: this.text,
     actions: {
-      remove: action(() => this.parentList.remove(this)),
+      remove: action(() => this.parent().remove(this)),
     }
   });
 }

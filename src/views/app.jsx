@@ -1,10 +1,10 @@
 import React from 'react';
-import TaskList from './tasklist';
+import ListList from './listlist';
 
 const AppView = (props) => (
   <article>
     <h1>Application</h1>
-    <TaskList {...props.taskList} />
+    <ListList {...props.tasklists} />
   </article>
 );
 

@@ -2,6 +2,7 @@ import React from 'react';
 
 const TaskList = (props) => (
   <div>
+    <h2>{props.title}</h2>
     <div>
       {props.tasks.map((task) => (
         <div>
