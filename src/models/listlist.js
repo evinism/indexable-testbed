@@ -14,7 +14,7 @@ export default class ListList extends List {
   getProps = () => ({
     lists: this.itemArray().map(list => list.getProps()),
     actions: {
-      add: action((text) => this.append(new TaskList(text, this))),
+      add: action((text) => this.append(new TaskList(text))),
     }
   });
 };

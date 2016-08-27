@@ -5,8 +5,7 @@ const ListList = (props) => (
   <div>
     <div>
       {props.lists.map((list) => (
-        <div>
-          <div onClick={() => list.actions.remove(list)}>x </div>
+        <div className="tasklist">
           <TaskList {...list} />
         </div>
       ))}

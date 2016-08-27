@@ -2,11 +2,14 @@ import React from 'react';
 
 const TaskList = (props) => (
   <div>
-    <h2>{props.title}</h2>
+    <h2>
+      {props.title}
+    </h2>
+    <span onClick={() => props.actions.destroy()}>x</span>
     <div>
       {props.tasks.map((task) => (
         <div>
-          <span onClick={() => task.actions.remove(task)}>x </span>
+          <span onClick={() => task.actions.destroy()}>x </span>
           {task.text}
         </div>
       ))}

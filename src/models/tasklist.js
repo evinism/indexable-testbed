@@ -14,8 +14,8 @@ export default class TaskList extends List {
     title: this.title,
     tasks: this.itemArray().map(task => task.getProps()),
     actions: {
-      add: action((text) => this.append(new Task(text, this))),
-      remove: action(() => this.parent().remove(this)),
+      add: action((text) => this.append(new Task(text))),
+      destroy: action(() => this.removeFromParent()),
     }
   });
 };

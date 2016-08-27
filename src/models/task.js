@@ -16,7 +16,7 @@ export default class Task extends Listable {
   getProps = () => ({
     text: this.text,
     actions: {
-      remove: action(() => this.parent().remove(this)),
+      destroy: action(() => this.removeFromParent()),
     }
   });
 }

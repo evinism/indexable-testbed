@@ -1,19 +1,16 @@
 import Listable from './listable';
 import { values } from 'ramda';
 
-
 export default class List extends Listable {
-  constructor(parent){
-    super(parent);
-  }
-
   items = {};
 
   append = (item) => {
+    item.setParent(this);
     return this.items[item] = item;
   };
 
   remove = (item) => {
+    item.setParent(undefined);
     delete this.items[item];
   };
 
