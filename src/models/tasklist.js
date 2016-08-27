@@ -3,8 +3,8 @@ import List from './../util/list';
 import Task from './task';
 
 export default class TaskList extends List {
-  constructor(title, parent){
-    super(parent);
+  constructor(title) {
+    super();
     this.title = title || "";
   }
 

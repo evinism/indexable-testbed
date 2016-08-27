@@ -5,7 +5,7 @@ import { action } from 'stupid-subscribe';
 export default class App {
   constructor() {
     this.taskLists = new ListList();
-    this.taskLists.append(new TaskList('Todo List', this.taskLists));
+    this.taskLists.append(new TaskList('List 1'));
   }
 
   getProps = () => ({

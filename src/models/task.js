@@ -2,8 +2,8 @@ import Listable from './../util/listable';
 import { action } from 'stupid-subscribe';
 
 export default class Task extends Listable {
-  constructor(text, parentList){
-    super(parentList);
+  constructor(text) {
+    super();
     this.text = text || "";
   };
 

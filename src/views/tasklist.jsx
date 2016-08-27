@@ -16,7 +16,7 @@ const TaskList = (props) => (
     </div>
     <hr />
     <div onClick={() => props.actions.add(prompt("What is your task?"))}>
-      Click here to add a task
+      + New Task
     </div>
   </div>
 );

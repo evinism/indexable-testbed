@@ -5,10 +5,6 @@ import List from './../util/list';
 import TaskList from './tasklist';
 
 export default class ListList extends List {
-  constructor(parent){
-    super(parent);
-  }
-
   compare = () => (0);
 
   getProps = () => ({

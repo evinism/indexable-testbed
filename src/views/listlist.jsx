@@ -12,7 +12,7 @@ const ListList = (props) => (
     </div>
     <hr />
     <div onClick={() => props.actions.add(prompt("What is your list's title?"))}>
-      Click here to add a list
+      + New List
     </div>
   </div>
 );

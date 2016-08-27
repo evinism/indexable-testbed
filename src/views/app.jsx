@@ -3,7 +3,7 @@ import ListList from './listlist';
 
 const AppView = (props) => (
   <article>
-    <h1>Application</h1>
+    <h1>TodoApp</h1>
     <ListList {...props.tasklists} />
   </article>
 );
