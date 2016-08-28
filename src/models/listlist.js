@@ -5,7 +5,7 @@ import List from './../util/list';
 import TaskList from './tasklist';
 
 export default class ListList extends List {
-  compare = () => (0);
+  compare = () => (otherList) => (this.title.localeCompare(otherList.title));
 
   getProps = () => ({
     lists: this.itemArray().map(list => list.getProps()),

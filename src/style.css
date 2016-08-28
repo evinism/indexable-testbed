@@ -1,10 +1,9 @@
 .tasklist {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 20px;
   vertical-align: top;
 }
 
 .tasklist h2 {
   display: inline-block;
-  margin-right: 10px;
 }
