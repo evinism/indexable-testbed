@@ -14,7 +14,11 @@ export default class List extends Listable {
     delete this.items[item];
   };
 
+  static compare = (a, b) => {
+    throw("Error: Listable requires static implementation of compare")
+  }
+
   itemArray = () => (
-    values(this.items).sort((a, b) => a.compare(b))
+    values(this.items).sort((a, b) => this.constructor.compare(a, b))
   );
 };

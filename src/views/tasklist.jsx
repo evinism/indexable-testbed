@@ -1,23 +1,17 @@
 import React from 'react';
+import Task from './task';
 
 const TaskList = (props) => (
   <div>
+    <span onClick={props.actions.destroy}>[x] </span>
     <h2>
       {props.title}
     </h2>
-    <span onClick={props.actions.destroy}> [x]</span>
-    <div>
+    <ul>
       {props.tasks.map((task) => (
-        <div>
-          <b>{task.text}</b>
-          <span onClick={task.actions.destroy}> [x]</span>
-          <div>
-            Status: {task.status}
-            <span onClick={() => task.actions.setStatus(prompt("What is the new status?"))}> [edit]</span>
-          </div>
-        </div>
+        <Task {...task} />
       ))}
-    </div>
+    </ul>
     <hr />
     <div onClick={() => props.actions.add(prompt("What is your task?"))}>
       [+ New Task]

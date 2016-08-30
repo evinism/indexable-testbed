@@ -7,3 +7,13 @@
 .tasklist h2 {
   display: inline-block;
 }
+
+.tasklist ul {
+  padding-left: 10px;
+  margin-top: 0px;
+  list-style: none;
+}
+
+.tasklist li {
+  margin-bottom: 10px;
+}

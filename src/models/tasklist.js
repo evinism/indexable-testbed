@@ -8,7 +8,7 @@ export default class TaskList extends List {
     this.title = title || "";
   }
 
-  compare = () => (0);
+  static compare = (a, b) => (a.text.localeCompare(b.text));
 
   getProps = () => ({
     title: this.title,
